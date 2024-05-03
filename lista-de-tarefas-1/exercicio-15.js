@@ -1,14 +1,29 @@
-// const prompt = require("prompt-sync")();
+const prompt = require("prompt-sync")();
 
-// let numeros = prompt("Informe 4 números inteiros (separe por uma vírgula): ")
-//   .split(",")
-//   .map((numero) => parseInt(numero));
+let somaNumeros = 0;
+let somaPesos = 0;
 
-// let somando = numeros[0] + 25;
-// let triplo = numeros[1] * 3;
-// let percentagem = numeros[2] * (12 / 100);
-// numeros[3] = numeros[0] + numeros[1] + numeros[2];
+let numero = parseFloat(prompt("Digite um número decimal (ou 0 para sair): "));
+let peso = parseFloat(
+  prompt("Digite o peso correspondente ao número digitado: ")
+);
 
-// console.log(
-//   `O resultado das operações é: ${somando}, ${triplo}, ${percentagem} e ${numeros[3]}`
-// );
+while (numero !== 0) {
+  somaNumeros += numero * peso;
+  somaPesos += peso;
+  numero = parseFloat(prompt("Digite outro número decimal (ou 0 para sair): "));
+  if (numero !== 0) {
+    peso = parseFloat(
+      prompt("Digite o peso correspondente ao número digitado: ")
+    );
+  }
+}
+
+if (somaPesos !== 0) {
+  let mediaPonderada = somaNumeros / somaPesos;
+  console.log(
+    `A média ponderada dos números digitados é: ${mediaPonderada.toFixed(2)}`
+  );
+} else {
+  console.log("Nenhum número foi digitado.");
+}

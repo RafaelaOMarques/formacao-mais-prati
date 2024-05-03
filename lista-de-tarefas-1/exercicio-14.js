@@ -1,14 +1,20 @@
-// const prompt = require("prompt-sync")();
+const prompt = require("prompt-sync")();
 
-// let numeros = prompt("Informe 4 números inteiros (separe por uma vírgula): ")
-//   .split(",")
-//   .map((numero) => parseInt(numero));
+let soma = 0;
+let contador = 0;
+let numero = parseFloat(prompt("Informe um número decimal (ou 0 para sair): "));
 
-// let somando = numeros[0] + 25;
-// let triplo = numeros[1] * 3;
-// let percentagem = numeros[2] * (12 / 100);
-// numeros[3] = numeros[0] + numeros[1] + numeros[2];
+while (numero !== 0) {
+  soma += numero;
+  contador++;
+  numero = parseFloat(
+    prompt("Informe outro número decimal (ou 0 para sair): ")
+  );
+}
 
-// console.log(
-//   `O resultado das operações é: ${somando}, ${triplo}, ${percentagem} e ${numeros[3]}`
-// );
+if (contador !== 0) {
+  let media = soma / contador;
+  console.log(`A média dos números digitados é: ${media.toFixed(2)}`);
+} else {
+  console.log("Nenhum número foi digitado.");
+}
