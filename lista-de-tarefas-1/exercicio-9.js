@@ -1,14 +1,32 @@
-// const prompt = require("prompt-sync")();
+const prompt = require("prompt-sync")();
 
-// let numeros = prompt("Informe 4 números inteiros (separe por uma vírgula): ")
-//   .split(",")
-//   .map((numero) => parseInt(numero));
+let codigoOrigem = parseInt(prompt("Informe o código origem do produto: "));
 
-// let somando = numeros[0] + 25;
-// let triplo = numeros[1] * 3;
-// let percentagem = numeros[2] * (12 / 100);
-// numeros[3] = numeros[0] + numeros[1] + numeros[2];
-
-// console.log( 
-//   `O resultado das operações é: ${somando}, ${triplo}, ${percentagem} e ${numeros[3]}`
-// );
+switch (true) {
+  case 1:
+    console.log("Sul");
+    break;
+  case 2:
+    console.log("Norte");
+    break;
+  case 3:
+    console.log("Leste");
+    break;
+  case 4:
+    console.log("Oeste");
+    break;
+  case 5 || 6:
+    console.log("Nordeste");
+    break;
+  case 7 || 8 || 9:
+    console.log("Sudeste");
+    break;
+  case codigoOrigem >= 10 && codigoOrigem < 21:
+    console.log("Centro-Oeste");
+    break;
+  case codigoOrigem >= 25 && codigoOrigem < 51:
+    console.log("Nordeste");
+    break;
+  default:
+    console.log("O número informado não possue a origem no Brasil");
+}

@@ -44,6 +44,19 @@
 9. Escreva um algoritmo que leia o código de origem de um produto e imprima a região
    do mesmo, conforme a tabela abaixo:
 
+   ***
+
+   ## |Codigo de origem:|
+
+   1 - Sul
+   2 - Norte
+   3 - Leste
+   4 - Oeste
+   5 ou 6 - Nodeste
+   7,8, ou 9 - Sudeste
+   10 até 20 - Centro-Oeste
+   25 até 50 - Nordeste
+
 10. Escreva um algoritmo para ler um número inteiro e escrevê-lo na tela 10 vezes.
 
 11. Escreva um algoritmo para ler uma quantidade indeterminada de valores inteiros. Para

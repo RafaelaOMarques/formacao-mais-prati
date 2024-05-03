@@ -1,14 +1,7 @@
-// const prompt = require("prompt-sync")();
+for (let numero = 1000; numero <= 1999; numero++) {
+  if (numero % 11 === 5) {
+    console.log(numero);
+  }
+}
 
-// let numeros = prompt("Informe 4 números inteiros (separe por uma vírgula): ")
-//   .split(",")
-//   .map((numero) => parseInt(numero));
-
-// let somando = numeros[0] + 25;
-// let triplo = numeros[1] * 3;
-// let percentagem = numeros[2] * (12 / 100);
-// numeros[3] = numeros[0] + numeros[1] + numeros[2];
-
-// console.log(
-//   `O resultado das operações é: ${somando}, ${triplo}, ${percentagem} e ${numeros[3]}`
-// );
+console.log("Números de 1000 a 1999 que divididos por 11 dão resto igual a 5:");

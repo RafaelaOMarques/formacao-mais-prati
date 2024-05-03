@@ -1,14 +1,16 @@
-// const prompt = require("prompt-sync")();
+const prompt = require("prompt-sync")();
 
-// let numeros = prompt("Informe 4 números inteiros (separe por uma vírgula): ")
-//   .split(",")
-//   .map((numero) => parseInt(numero));
+while (true) {
+  let valor = parseInt(
+    prompt("Digite um valor inteiro (digite 0 para sair): ")
+  );
 
-// let somando = numeros[0] + 25;
-// let triplo = numeros[1] * 3;
-// let percentagem = numeros[2] * (12 / 100);
-// numeros[3] = numeros[0] + numeros[1] + numeros[2];
-
-// console.log(
-//   `O resultado das operações é: ${somando}, ${triplo}, ${percentagem} e ${numeros[3]}`
-// );
+  if (valor <= 0) {
+    console.log("Programa encerrado.");
+    break;
+  } else if (valor % 2 === 0) {
+    console.log(`${valor} é PAR.`);
+  } else {
+    console.log(`${valor} é ÍMPAR.`);
+  }
+}
