@@ -39,3 +39,11 @@ button {
 button:hover {
   background-color: #45a049;
 }
+
+@media screen and (max-width: 900px) {
+  form {
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px;
+  }
+}
