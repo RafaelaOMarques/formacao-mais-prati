@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Controle de Programação de Férias</title>
+  <link rel="stylesheet" href="../styles/forms.css">
+  <link rel="stylesheet" href="../styles/styles.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <h1>Viva Férias</h1>
+    <p>Controle de Programação de Férias</p>
+  </header>
+  <main>
+    <nav>
+      <ul>
+        <li><a class="menu-option" href="../index.html">Home</a>
+        </li>
+        <li><a class="menu-option active" href="../pages/programe.html">Programar</a>
+        </li>
+        <li><a class="menu-option" href="../pages/saiba-mais.html">Saiba Mais</a>
+        </li>
+        <li><a class="menu-option" href="../pages/login.html">Entrar</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="form">
+      <form action="">
+        <label for="colaborador-name">Colaborador</label>
+        <input type="text" id="colaborador-name" name="name" required disabled>
+
+        <label for="start-date">Data de Início</label>
+        <input type="date" id="start-date" name="start-date" required>
+
+        <label for="end-date">Data Final</label>
+        <input type="date" id="end-date" name="end-date" required>
+
+        <label for="message">Mensagem</label>
+        <textarea id="message" name="message" rows="5"
+          placeholder="Adicione qualquer informação adicional aqui..."></textarea>
+
+        <button type="submit">Enviar Solicitação</button>
+      </form>
+    </div>
+
+  </main>
+  <footer>
+    <span class="marca">Viva Férias</span>
+    <span>&copy; 2024 - Todos os direitos reservados</span>
+    <span>Desenvolvido por Rafaela Oliveira Marques</span>
+  </footer>
+</body>
+
+</html>
