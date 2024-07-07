@@ -1,0 +1,41 @@
+:root {
+  --primary-color: #012030;
+  --secondary-color: #13678a;
+  --hover-color: #45c4b0;
+  --background-primary-color: #dafdba;
+  --background-secondary-color: #9aeba3;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  padding: 0 200px;
+}
+
+label {
+  margin: 10px 0 5px;
+  color: #333;
+}
+
+input,
+textarea {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid var(--secondary-color);
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+button {
+  padding: 10px;
+  background-color: var(--background-secondary-color);
+  color: black;
+  border: solid var(--secondary-color) 1px;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}

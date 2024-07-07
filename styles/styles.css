@@ -1,0 +1,177 @@
+:root {
+  --primary-color: #012030;
+  --secondary-color: #13678a;
+  --hover-color: #45c4b0;
+  --background-primary-color: #dafdba;
+  --background-secondary-color: #9aeba3;
+}
+
+* {
+  border: 0;
+  padding: 0;
+  font-family: "Raleway", sans-serif;
+}
+
+body {
+  background-color: var(--background-secondary-color);
+  height: 100vh;
+}
+
+header {
+  background-color: var(--background-primary-color);
+  text-align: center;
+  padding: 10px 0;
+}
+
+ul {
+  display: flex;
+  justify-content: end;
+  margin-right: 20px;
+  margin-bottom: 30px;
+}
+
+li {
+  list-style: none;
+  gap: 5px;
+}
+
+.menu-option {
+  font-weight: 700;
+  padding: 0 10px;
+  align-items: start;
+  text-decoration: none;
+  color: black;
+}
+
+.active {
+  text-decoration: underline var(--background-primary-color) 4px;
+  border-radius: 10%;
+  padding: 5px 8px;
+}
+
+li:hover {
+  background-color: var(--background-primary-color);
+  padding: 10px;
+  border-radius: 10%;
+  color: #13678a;
+}
+
+.main {
+  display: flex;
+  justify-content: space-evenly;
+}
+.calendar,
+.events {
+  /* width: 40%; */
+  /* margin: 20px auto; */
+  justify-content: center;
+  text-align: center;
+}
+
+.events {
+  border: var(--primary-color) double 1px;
+  border-radius: 5%;
+  padding: 20px;
+  background-color: antiquewhite;
+}
+
+#calendar-navegaton {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#calendar-navegaton button {
+  background-color: #9aeba3;
+  font-size: x-large;
+  font-weight: 700;
+  color: #012030;
+}
+
+#calendar-navegaton button:hover {
+  background-color: #13678a;
+  padding: 2px;
+  border-radius: 20%;
+  cursor: pointer;
+}
+
+#calendar-days,
+#calendar-dates {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+}
+
+.date {
+  padding: 15px;
+  margin: 5px;
+}
+
+.day {
+  background-color: antiquewhite;
+  padding: 5px;
+}
+
+.date:hover {
+  background-color: #13678a;
+  cursor: pointer;
+  border-radius: 10%;
+}
+
+.marca {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+footer {
+  background-color: #333;
+  margin-top: 30px;
+  color: white;
+  text-align: center;
+  padding: 1em 0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+footer span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 900px) {
+  .menu-option,
+  header {
+    padding: 0;
+    text-transform: uppercase;
+  }
+
+  ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.9em;
+    padding: 10px;
+    font-weight: 500;
+    margin-bottom: 30px;
+  }
+  .main {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .calendar {
+    width: 60%;
+    margin: auto;
+    text-align: center;
+  }
+
+  .date {
+    padding: 5px;
+  }
+
+  footer {
+    margin-top: 50px;
+  }
+}
