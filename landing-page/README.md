@@ -8,4 +8,4 @@ Este é um projeto de uma pagina web para programação de férias. Facilitando 
 
 ## Disponível em:
 
-1.
+https://github.com/RafaelaOMarques/formacao-mais-prati/tree/main/landing-page
