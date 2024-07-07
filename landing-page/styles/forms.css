@@ -1,9 +1,10 @@
 :root {
-  --primary-color: #012030;
+  --primary-color: hsl(200, 96%, 10%);
   --secondary-color: #13678a;
-  --hover-color: #45c4b0;
-  --background-primary-color: #dafdba;
-  --background-secondary-color: #9aeba3;
+  --button-color: #20bdece1;
+  --hover-color: #105370e1;
+  --background-primary-color: white;
+  --background-secondary-color: #333;
 }
 
 form {
@@ -28,7 +29,7 @@ textarea {
 
 button {
   padding: 10px;
-  background-color: var(--background-secondary-color);
+  background-color: var(--button-color);
   color: black;
   border: solid var(--secondary-color) 1px;
   border-radius: 4px;
@@ -37,7 +38,7 @@ button {
 }
 
 button:hover {
-  background-color: #45a049;
+  background-color: var(--hover-color);
 }
 
 @media screen and (max-width: 900px) {

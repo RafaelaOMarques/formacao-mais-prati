@@ -1,9 +1,10 @@
 :root {
-  --primary-color: #012030;
+  --primary-color: hsl(200, 96%, 10%);
   --secondary-color: #13678a;
-  --hover-color: #45c4b0;
-  --background-primary-color: #dafdba;
-  --background-secondary-color: #9aeba3;
+  --button-color: #20bdece1;
+  --hover-color: #105370e1;
+  --background-primary-color: white;
+  --background-secondary-color: #333;
 }
 
 .container {
@@ -29,20 +30,8 @@ h2 {
 }
 
 .benefits > li {
-  color: var(--primary-color);
+  color: var(--secondary-color);
   font-weight: 700;
-  /* padding: 20px 0; */
-  /* border-left: solid var(--primary-color); */
-}
-
-footer {
-  background-color: #333;
-  color: white;
-  text-align: center;
-  padding: 1em 0;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
 }
 
 @media screen and (max-width: 900px) {
@@ -57,7 +46,7 @@ footer {
     font-size: 0.9em;
     padding: 10px;
     font-weight: 500;
-    border-top: double var(--primary-color);
+    border-top: double var(--secondary-color);
   }
 
   .saiba-mais {
