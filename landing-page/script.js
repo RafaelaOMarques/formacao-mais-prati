@@ -43,6 +43,7 @@ function renderCalendar(date) {
   }
 }
 
+
 btnPrev.addEventListener("click", () => {
   currentDate.setMonth(currentDate.getMonth() - 1);
   renderCalendar(currentDate);
