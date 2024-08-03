@@ -1,9 +1,10 @@
 :root {
-  --primary-color: #012030;
+  --primary-color: hsl(200, 96%, 10%);
   --secondary-color: #13678a;
-  --hover-color: #45c4b0;
-  --background-primary-color: #dafdba;
-  --background-secondary-color: #9aeba3;
+  --button-color: #20bdece1;
+  --hover-color: #105370e1;
+  --background-primary-color: white;
+  --background-secondary-color: #333;
 }
 
 * {
@@ -13,14 +14,23 @@
 }
 
 body {
-  background-color: var(--background-secondary-color);
+  background-color: var(--background-primary-color);
   height: 100vh;
+}
+h1{
+  padding-top: 20px;
+}
+
+ul{
+  padding-bottom: 10px;
 }
 
 header {
-  background-color: var(--background-primary-color);
+  width: 100%;
+  background-color: var(--button-color);
   text-align: center;
-  padding: 10px 0;
+  /* padding: 10px 0; */
+  position: relative;
 }
 
 ul {
@@ -44,16 +54,16 @@ li {
 }
 
 .active {
-  text-decoration: underline var(--background-primary-color) 4px;
+  text-decoration: underline white 4px;
   border-radius: 10%;
   padding: 5px 8px;
 }
 
 li:hover {
-  background-color: var(--background-primary-color);
+  background-color: var(--hover-color);
   padding: 10px;
   border-radius: 10%;
-  color: #13678a;
+  color: white;
 }
 
 .main {
@@ -69,7 +79,7 @@ li:hover {
 }
 
 .events {
-  border: var(--primary-color) double 1px;
+  border: var(--button-color) double 1px;
   border-radius: 5%;
   padding: 20px;
   background-color: antiquewhite;
@@ -82,14 +92,13 @@ li:hover {
 }
 
 #calendar-navegaton button {
-  background-color: #9aeba3;
   font-size: x-large;
   font-weight: 700;
   color: #012030;
 }
 
 #calendar-navegaton button:hover {
-  background-color: #13678a;
+  background-color: var(--hover-color);
   padding: 2px;
   border-radius: 20%;
   cursor: pointer;
@@ -112,7 +121,7 @@ li:hover {
 }
 
 .date:hover {
-  background-color: #13678a;
+  background-color: var(--button-color);
   cursor: pointer;
   border-radius: 10%;
 }
@@ -123,7 +132,7 @@ li:hover {
 }
 
 footer {
-  background-color: #333;
+  background-color: var(--background-secondary-color);
   margin-top: 30px;
   color: white;
   text-align: center;

@@ -7,25 +7,22 @@
   --background-secondary-color: #333;
 }
 
-.login-container {
+.consultar-container {
   text-align: center;
 }
 
-button {
-  padding: 10px 20px;
-  background-color: var(--button-color);
-  color: white;
-  border: none;
-  border-radius: 4px;
-  font-size: 16px;
-  cursor: pointer;
+
+.programacao-colaborador{
+  display: inline-block;
+  flex-direction: column;
+  padding: 10px;
+  border: solid var(--background-secondary-color);
+  justify-content: space-between;
+  margin: 10px;
 }
 
-button:hover {
-  background-color: var(--hover-color);
-}
 
-.footer-login {
+.footer-consultar {
   background-color: #333;
   margin-top: 30px;
   color: white;
